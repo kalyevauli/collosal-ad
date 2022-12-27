@@ -1,0 +1,101 @@
+@media (max-width: 1440px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+    .hero-btn{
+        margin-left:250px
+    }
+    .dev-title{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    #menu{
+        display: block;
+    }
+    .hero-btn{
+        margin-left: 150px;
+    }
+    .navbar a{
+        display: none;
+    }
+    .dev{
+        flex-direction: column;
+    }
+    .dev-title{
+        margin-top: 10px;
+    }
+    .navbar button{
+        margin-right: 120px;
+    }
+    .navbar h1{
+        padding-left: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu{
+        display: block;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .hero-btn{
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar button {
+        margin-right: 40px;
+    }
+    .hero-btn {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .hero button{
+        margin-top: 10px;
+    }
+    .hero-btn{
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar h1{
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .dev-title{
+        width: 90%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .line{
+        width: 200px;
+    }
+    .hero-btn{
+        margin-left: 50px;
+    }
+}

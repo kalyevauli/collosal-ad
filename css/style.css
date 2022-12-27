@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.body{
+    font-family: "Noto Sans",sans-serif;
+}
+button{
+    transition: .4s;
+    cursor: pointer;
+    border: none;
+}
+/*header-start*/
+#navbar{
+    position: sticky;
+    top: 0;
+    padding: 30px 0;
+    background: #05052d;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h1{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.navbar-a a {
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar button{
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.navbar button:hover{
+    transform: scale(1.1);
+    background: rgba(117,78,238,0.78);
+}
+#menu{
+    display: none;
+}
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+/*header-end*/
+
+/*hero-start*/
+#hero{
+    padding: 40px 0;
+    background: #05052d;
+}
+.hero h3{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #16FCD2;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero h1{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 13px 0 24px 0;
+}
+.hero p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.hero button{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 20px 35px;
+    margin-left: 20px;
+}
+.hero button:hover{
+    transform: scale(1.1);
+    background: #6016FC;
+    border-radius: 3px;
+}
+.hero-btn{
+    margin-top: 38px;
+    margin-left: 400px;
+}
+/*hero-end*/
+
+/*dev-start*/
+#dev{
+    padding: 40px 0;
+    background: #05052d;
+}
+.dev-title{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    width: 328px;
+    height: 276px;
+}
+.dev{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dev-logo{
+    margin-top: 32px;
+    margin-left: 40px;
+}
+.dev-logo h1{
+    padding-top: 29px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.dev-logo p{
+    padding-top: 8px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*.dev-end*/
+
+/*footer-start*/
+#footer{
+    padding: 40px 0;
+    background: #05052d;
+}
+.line{
+    margin-left: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 90%;
+    height: 4px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h1{
+    padding-top: 36px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo ion-icon{
+    padding-top: 36px;
+    margin-right: 10px;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*footer-end*/
